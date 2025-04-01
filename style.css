@@ -26,6 +26,7 @@
 /* 2. Remove default margin */
 * {
   margin: 0;
+  border: 1px solid #f4cf8b;
 }
 
 /* 3. Enable keyword animations */
@@ -99,4 +100,19 @@ ul,
 li {
   all: unset;
   font-family: 'Questrial', Arial, sans-serif;
+}
+
+/*End Resets*/
+
+.dashboard-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+}
+
+.header {
+  grid-column: 1 / -1;
 }
