@@ -27,6 +27,7 @@
 * {
   margin: 0;
   border: 1px solid #f4cf8b;
+  font-family: 'Raleway', Arial, sans-serif;
 }
 
 /* 3. Enable keyword animations */
@@ -102,17 +103,51 @@ li {
   font-family: 'Questrial', Arial, sans-serif;
 }
 
+a {
+  text-transform: uppercase;
+  width: 100%;
+}
+
+a:hover {
+  font-weight: 800;
+}
+
 /*End Resets*/
 
 .dashboard-wrapper {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto 1fr;
+  background-image: url(./asset/imgs/splash-page-bg-1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
 
 .sidebar {
   grid-column: 1 / 2;
+  grid-row: 1/-1;
+  padding: 16px;
+  display: grid;
+  grid-template-rows: auto 3fr 1fr;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  cursor: pointer;
 }
 
 .header {
-  grid-column: 1 / -1;
+  grid-column: 2 / -1;
+  grid-row: 1;
+}
+
+.content {
+  grid-column: 2 / -1;
+  grid-row: 2;
 }
