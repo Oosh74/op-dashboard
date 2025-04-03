@@ -130,12 +130,17 @@ a:hover {
   grid-row: 1/-1;
   padding: 16px;
   display: grid;
-  grid-template-rows: auto 3fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
 }
 
 .sidebar ul {
   display: flex;
   flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar li {
+  flex-grow: 1 1 auto;
 }
 
 .sidebar a {
@@ -145,9 +150,50 @@ a:hover {
 .header {
   grid-column: 2 / -1;
   grid-row: 1;
+  display: grid;
+  padding: 16px;
 }
 
 .content {
   grid-column: 2 / -1;
   grid-row: 2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+  padding: 16px;
+}
+
+.content-cards {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.content div {
+  padding: 24px;
+}
+
+.trending {
+  grid-column: 2 / 3;
+}
+
+.announcments {
+  grid-row: 1 / 2;
+}
+
+.top-nav,
+.bottom-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.top-nav div,
+.bottom-nav div {
+  display: flex;
+}
+
+.top-nav div:nth-child(2),
+.bottom-nav div:nth-child(2) {
+  justify-content: flex-end;
+  align-items: flex-end;
 }
