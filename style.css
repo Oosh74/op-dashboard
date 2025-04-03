@@ -136,15 +136,29 @@ a:hover {
 .sidebar ul {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
 }
 
 .sidebar li {
   flex-grow: 1 1 auto;
+  display: flex;
 }
 
 .sidebar a {
   cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.sidebar-main-nav ul li:nth-child(1) {
+  font-weight: 600;
+}
+
+.sidebar img {
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
 .header {
