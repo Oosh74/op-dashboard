@@ -183,10 +183,6 @@ a:hover {
   grid-row: 1 / -1;
 }
 
-.content div {
-  padding: 24px;
-}
-
 .trending {
   grid-column: 2 / 3;
 }
@@ -210,4 +206,25 @@ a:hover {
 .bottom-nav div:nth-child(2) {
   justify-content: flex-end;
   align-items: flex-end;
+}
+
+.content-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  background-color: blue;
+}
+
+.card img {
+  height: 50px;
+  width: 50px;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
