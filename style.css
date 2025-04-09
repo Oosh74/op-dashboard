@@ -168,6 +168,12 @@ a:hover {
   padding: 16px;
 }
 
+.header img {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
 .content {
   grid-column: 2 / -1;
   grid-row: 2;
@@ -197,6 +203,10 @@ a:hover {
   grid-template-columns: 1fr 1fr;
 }
 
+.bottom-nav {
+  align-items: center;
+}
+
 .top-nav div,
 .bottom-nav div {
   display: flex;
@@ -222,5 +232,10 @@ a:hover {
 .card-head {
   display: flex;
   align-items: center;
+  gap: 16px;
+}
+
+.announcements-content {
+  display: grid;
   gap: 16px;
 }
