@@ -26,7 +26,6 @@
 /* 2. Remove default margin */
 * {
   margin: 0;
-  border: 1px solid #f4cf8b;
   font-family: 'Raleway', Arial, sans-serif;
 }
 
@@ -44,6 +43,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: #311c36;
   color: #f4cf8b;
+  border: 1px solid #f4cf8b;
 }
 
 /* 6. Improve media defaults */
@@ -129,8 +129,11 @@ a:hover {
   grid-column: 1 / 2;
   grid-row: 1/-1;
   padding: 16px;
-  display: grid;
-  grid-template-rows: auto 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border: 1px solid #f4cf8b;
+  align-items: flex-start;
 }
 
 .sidebar ul {
@@ -166,6 +169,7 @@ a:hover {
   grid-row: 1;
   display: grid;
   padding: 16px;
+  border: 1px solid #f4cf8b;
 }
 
 .header img {
@@ -191,9 +195,17 @@ a:hover {
 
 .trending {
   grid-column: 2 / 3;
+  border: 1px solid #f4cf8b;
+  padding: 16px;
+  gap: 16px;
 }
 
-.announcments {
+.trending-content {
+  display: grid;
+  gap: 16px;
+}
+
+.announcements {
   grid-row: 1 / 2;
 }
 
@@ -224,6 +236,19 @@ a:hover {
   gap: 1rem;
 }
 
+.card {
+  border: 1px solid #f4cf8b;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-house-data {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
 .card img {
   height: 50px;
   width: 50px;
@@ -232,10 +257,18 @@ a:hover {
 .card-head {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
+}
+
+.maxim {
+  font-style: italic;
+  letter-spacing: 0.75px;
+  margin-top: 16px;
 }
 
 .announcements-content {
   display: grid;
   gap: 16px;
+  border: 1px solid #f4cf8b;
+  padding: 16px;
 }
