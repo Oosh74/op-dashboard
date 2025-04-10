@@ -41,8 +41,8 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
-  background-color: #311c36;
-  color: #f4cf8b;
+  background-color: #2c3038;
+  color: #f3dcc2;
   border: 1px solid #f4cf8b;
 }
 
@@ -116,12 +116,8 @@ a:hover {
 
 .dashboard-wrapper {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: auto 1fr;
-  background-image: url(./asset/imgs/splash-page-bg-1.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   min-height: 100vh;
 }
 
@@ -183,7 +179,6 @@ a:hover {
   grid-row: 2;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
   gap: 24px;
   padding: 16px;
 }
@@ -195,14 +190,13 @@ a:hover {
 
 .trending {
   grid-column: 2 / 3;
-  border: 1px solid #f4cf8b;
-  padding: 16px;
-  gap: 16px;
 }
 
 .trending-content {
   display: grid;
   gap: 16px;
+  border: 1px solid #f4cf8b;
+  padding: 16px;
 }
 
 .announcements {

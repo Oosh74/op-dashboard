@@ -4,4 +4,4 @@
 
 - House Sigils: AI Generated
 - UI Icons: https://feathericons.com/
-- Background Image: https://www.duneawakening.com/
+- Design inspired by Dune Spice Wars and Dune Awakening websites.
